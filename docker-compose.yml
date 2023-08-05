@@ -13,6 +13,13 @@ services:
     environment:
       - "DJANGO_SECRET_KEY=django-insecure-c*poozxl7cl)uwd79$o&c5!$mo*0(=nmsoux4qkb5a!g+^26dw"
       - "DJANGO_DEBUG=True"
+#        Google OAuth2 configuration
+      - "GOOGLE_CLIENT_ID=YOUR_CLIENT_ID"
+      - "GOOGLE_SECRET=YOUR_SECRET_KEY"
+#        SMTP configuration
+      - "DJANGO_EMAIL_HOST=YOUR_HOST"
+      - "DJANGO_HOST_USER=YOUR_HOST_USER"
+      - "DJANGO_HOST_PASSWORD=YOUR_HOST_PASSWORD"
   db:
     image: postgres:15
     volumes:
